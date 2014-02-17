@@ -36,7 +36,8 @@ public final class EXO {
     };
 
     @Mod.EventHandler()
-    public void preInit(FMLPreInitializationEvent event) {
+    public void preInit(FMLPreInitializationEvent event)
+    throws Exception{
         EXO.LOGGER.info("Pre-Initializing");
 
         EXO.LOGGER.info("Registering Items & Blocks");
@@ -45,17 +46,23 @@ public final class EXO {
     }
 
     @Mod.EventHandler()
-    public void init(FMLInitializationEvent event) {
+    public void init(FMLInitializationEvent event)
+    throws Exception{
         EXO.LOGGER.info("Initializing");
+
+        EXO.LOGGER.info("Proxy Inits");
+        EXO.proxy.init().initRenders().initTiles();
     }
 
     @Mod.EventHandler()
-    public void postInit(FMLPostInitializationEvent event) {
+    public void postInit(FMLPostInitializationEvent event)
+    throws Exception{
         EXO.LOGGER.info("Post-Initializing");
     }
 
     @Mod.EventHandler()
-    public void serverStarting(FMLServerStartingEvent event) {
+    public void serverStarting(FMLServerStartingEvent event)
+    throws Exception{
         EXO.LOGGER.info("Server-Starting");
     }
 }

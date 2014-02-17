@@ -1,7 +1,18 @@
 package com.asyncronous.exo.server;
 
 public class ServerProxy {
-    public void init(){}
-    public void initTiles(){}
-    public void initRenders(){}
+    public ServerProxy init()
+    throws Exception{
+        return this;
+    }
+
+    public ServerProxy initTiles()
+    throws Exception{
+        return this;
+    }
+
+    public ServerProxy initRenders()
+    throws Exception{
+        return this;
+    }
 }
