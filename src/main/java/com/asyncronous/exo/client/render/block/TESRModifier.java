@@ -1,6 +1,6 @@
 package com.asyncronous.exo.client.render.block;
 
-import com.asyncronous.exo.client.model.machine.ModelAssembler;
+import com.asyncronous.exo.client.model.machine.ModelModifier;
 import com.asyncronous.exo.client.render.TESR;
 import cpw.mods.fml.client.FMLClientHandler;
 import net.minecraft.client.renderer.RenderHelper;
@@ -8,11 +8,11 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
-public final class TESRAssembler extends TESR {
-    private final ResourceLocation TEXTURE = new ResourceLocation("exo", "textures/blocks/machine/assembler.png");
+public final class TESRModifier extends TESR {
+    private final ResourceLocation TEXTURE = new ResourceLocation("exo", "textures/blocks/machine/modifier.png");
 
-    public TESRAssembler(){
-        super(new ModelAssembler());
+    public TESRModifier(){
+        super(new ModelModifier());
     }
 
     @Override

@@ -3,7 +3,7 @@ package com.asyncronous.exo.client;
 import com.asyncronous.exo.annotation.TileRenderer;
 import com.asyncronous.exo.server.ServerProxy;
 import com.asyncronous.exo.tiles.machine.TileEntityAssembler;
-import com.asyncronous.exo.tiles.machine.TileEntityConstructor;
+import com.asyncronous.exo.tiles.machine.TileEntityModifier;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -14,7 +14,7 @@ public final class ClientProxy extends ServerProxy{
     public ClientProxy initTiles()
     throws Exception{
         this.registerTile(TileEntityAssembler.class);
-        this.registerTile(TileEntityConstructor.class);
+        this.registerTile(TileEntityModifier.class);
         return this;
     }
 
@@ -26,6 +26,7 @@ public final class ClientProxy extends ServerProxy{
     public ClientProxy initRenders()
     throws Exception{
         this.registerTileRenderer(TileEntityAssembler.class);
+        this.registerTileRenderer(TileEntityModifier.class);
         return this;
     }
 
