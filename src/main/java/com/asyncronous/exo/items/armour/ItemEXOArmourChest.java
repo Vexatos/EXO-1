@@ -5,7 +5,7 @@ import com.asyncronous.exo.items.ItemEXOArmour;
 public final class ItemEXOArmourChest extends ItemEXOArmour{
     public ItemEXOArmourChest(){
         super(ItemEXOArmour.TYPE_CHEST);
-        this.setUnlocalizedName("exoChest");
-        this.setTextureName("exoChest");
+        this.setUnlocalizedName("chest");
+        this.setTextureName("chest");
     }
 }

@@ -13,14 +13,17 @@ import java.util.List;
 
 public final class ItemComponent extends ItemEXO {
     public static final String[] NAMES = new String[]{
-
+            "chestplate", "chestplateLeft", "chestplateRight",
+            "concussionCell", "coreContainment", "joint",
+            "powerCell", "resistor", "shins",
+            "supportBar", "toes"
     };
     private final IIcon[] ICONS = new IIcon[ItemComponent.NAMES.length];
 
     public ItemComponent(){
         super();
-        this.setUnlocalizedName("misc.exoComponent");
-        this.setTextureName("misc/exoComponent");
+        this.setUnlocalizedName("misc.component");
+        this.setTextureName("misc/component");
     }
 
     @Override

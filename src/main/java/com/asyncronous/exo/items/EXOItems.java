@@ -6,6 +6,8 @@ import com.asyncronous.exo.items.armour.ItemEXOArmourChest;
 import com.asyncronous.exo.items.armour.ItemEXOArmourHelm;
 import com.asyncronous.exo.items.armour.ItemEXOArmourLeggings;
 import com.asyncronous.exo.items.core.*;
+import com.asyncronous.exo.items.misc.ItemComponent;
+import com.asyncronous.exo.items.misc.ItemCrafting;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -28,6 +30,9 @@ public final class EXOItems{
     public static final Item ITEM_ARMOUR_CHEST = new ItemEXOArmourChest();
     public static final Item ITEM_ARMOUR_LEGGINGS = new ItemEXOArmourLeggings();
     public static final Item ITEM_ARMOUR_BOOTS = new ItemEXOArmourBoots();
+
+    public static final Item ITEM_COMPONENT = new ItemComponent();
+    public static final Item ITEM_CRAFTING = new ItemCrafting();
 
     private EXOItems(){}
 
@@ -52,6 +57,9 @@ public final class EXOItems{
         this.register(EXOItems.ITEM_ARMOUR_CHEST, "chestplate");
         this.register(EXOItems.ITEM_ARMOUR_LEGGINGS, "leggings");
         this.register(EXOItems.ITEM_ARMOUR_BOOTS, "boots");
+
+        this.register(EXOItems.ITEM_COMPONENT, "component");
+        this.register(EXOItems.ITEM_CRAFTING, "crafting");
     }
 
     public void register(Item item, String uid){

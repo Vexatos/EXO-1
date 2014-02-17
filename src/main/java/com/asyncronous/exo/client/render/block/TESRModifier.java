@@ -2,6 +2,7 @@ package com.asyncronous.exo.client.render.block;
 
 import com.asyncronous.exo.client.model.machine.ModelModifier;
 import com.asyncronous.exo.client.render.TESR;
+import com.asyncronous.exo.tiles.TileEntityMachine;
 import cpw.mods.fml.client.FMLClientHandler;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.tileentity.TileEntity;
@@ -24,6 +25,7 @@ public final class TESRModifier extends TESR {
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
         GL11.glTranslatef((float) i + 0.5F, (float) j + 1.5F, (float) k + 0.5F);
         GL11.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
+        GL11.glRotatef(((TileEntityMachine) tile).getRotation(), 0.0F, 1.0F, 0.0F);
         this.MODEL.render(null, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0625F);
         GL11.glDisable(GL11.GL_BLEND);
         RenderHelper.disableStandardItemLighting();

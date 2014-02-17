@@ -2,7 +2,11 @@ package com.asyncronous.exo.blocks.machine;
 
 import com.asyncronous.exo.blocks.BlockMachine;
 import com.asyncronous.exo.tiles.machine.TileEntityModifier;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.init.Blocks;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
 public final class BlockModifier extends BlockMachine {
@@ -10,6 +14,12 @@ public final class BlockModifier extends BlockMachine {
         super();
         this.setBlockName("exo.block.machine.constructor");
         this.setBlockTextureName("exo:machine/constructor");
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public IIcon getIcon(int side, int meta){
+        return Blocks.anvil.getIcon(side, meta);
     }
 
     @Override

@@ -5,7 +5,7 @@ import com.asyncronous.exo.items.ItemEXOArmour;
 public final class ItemEXOArmourBoots extends ItemEXOArmour {
     public ItemEXOArmourBoots(){
         super(ItemEXOArmour.TYPE_BOOTS);
-        this.setUnlocalizedName("exoBoots");
-        this.setTextureName("exoBoots");
+        this.setUnlocalizedName("boots");
+        this.setTextureName("boots");
     }
 }

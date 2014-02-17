@@ -12,3 +12,35 @@ item.exo.core.mystic.name=Mystic Core
 item.exo.core.recon.name=Recon Core
 item.exo.core.reflex.name=Reflex Core
 item.exo.core.skybound.name=Skybound Core
+
+# Crafting Items
+item.exo.misc.crafting.fuse.name=Fuse
+item.exo.misc.crafting.hinge.name=Hinge
+item.exo.misc.crafting.metalGear.name=Metal Gear
+item.exo.misc.crafting.metalRod.name=Metal Rod
+item.exo.misc.crafting.metalSheet.name=Metal Sheet
+item.exo.misc.crafting.padLock.name=Pad Lock
+item.exo.misc.crafting.reenforcedMetalSheet.name=Reenforced Metal Sheet
+item.exo.misc.crafting.ringRod.name=Ring Rod
+item.exo.misc.crafting.storageDrive.name=Storage Drive
+item.exo.misc.crafting.suspension.name=Suspension
+item.exo.misc.crafting.valve.name=Valve
+
+# Component Items
+item.exo.misc.component.chestplate.name=Chestplate
+item.exo.misc.component.chestplateLeft.name=Chestplate (Left)
+item.exo.misc.component.chestplateRight.name=Chestplate (Right)
+item.exo.misc.component.concussionCell.name=Concussion Cell
+item.exo.misc.component.coreContainment.name=Core Containment
+item.exo.misc.component.joint.name=Joint
+item.exo.misc.component.powerCell.name=Power Cell
+item.exo.misc.component.resistor.name=Resistor
+item.exo.misc.component.shins.name=Shins
+item.exo.misc.component.supportBar.name=Support Bar
+item.exo.misc.component.toes.name=Toes
+
+# Armour Items
+item.exo.armor.helmet.name=Exoskeleton Helmet
+item.exo.armor.chest.name=Exoskeleton Chestplate
+item.exo.armor.leggings.name=Exoskeleton Leggings
+item.exo.armor.boots.name=Exoskeleton Boots
