@@ -13,6 +13,21 @@ public final class BlockAssembler extends BlockMachine {
     }
 
     @Override
+    public boolean isOpaqueCube(){
+        return false;
+    }
+
+    @Override
+    public boolean renderAsNormalBlock(){
+        return false;
+    }
+
+    @Override
+    public int getRenderType(){
+        return -1;
+    }
+
+    @Override
     public TileEntity createNewTileEntity(World world, int i){
         return new TileEntityAssembler();
     }

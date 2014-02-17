@@ -9,13 +9,13 @@ public class ItemCore extends ItemEXO{
 
     @Override
     public Item setUnlocalizedName(String name){
-        super.setUnlocalizedName("exo.core" + name);
+        super.setUnlocalizedName("core." + name);
         return this;
     }
 
     @Override
     public Item setTextureName(String name){
-        super.setTextureName("exo:core/" + name);
+        super.setTextureName("core/" + name);
         return this;
     }
 }
