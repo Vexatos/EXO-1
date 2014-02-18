@@ -1,4 +1,4 @@
-package com.asyncronous.exo.lib;
+package com.asyncronous.exo.lib.handler;
 
 import com.google.common.eventbus.Subscribe;
 import cpw.mods.fml.common.gameevent.TickEvent;
