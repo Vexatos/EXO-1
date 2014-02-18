@@ -29,4 +29,18 @@ public enum CoreRegistry{
 
         return false;
     }
+
+    public ICore getValidatedCore(String name){
+        if(this.isValidCoreName(name)){
+            for(ICore core : this.CORES){
+                if(core.getCoreName().equalsIgnoreCase(name)){
+                    return core;
+                }
+            }
+
+            return null;
+        } else{
+            return null;
+        }
+    }
 }
