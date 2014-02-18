@@ -1,10 +1,13 @@
 package com.asyncronous.exo.items;
 
+import com.asyncronous.exo.api.CoreRegistry;
+import com.asyncronous.exo.api.ICore;
 import net.minecraft.item.Item;
 
-public class ItemCore extends ItemEXO{
+public abstract class ItemCore extends ItemEXO implements ICore {
     public ItemCore(){
         super();
+        CoreRegistry.INSTANCE.registerCore(this);
     }
 
     @Override

@@ -8,4 +8,14 @@ public final class ItemReflexCore extends ItemCore {
         this.setUnlocalizedName("reflex");
         this.setTextureName("reflex");
     }
+
+    @Override
+    public void onTickAction() {
+
+    }
+
+    @Override
+    public String getCoreName() {
+        return "reflex";
+    }
 }

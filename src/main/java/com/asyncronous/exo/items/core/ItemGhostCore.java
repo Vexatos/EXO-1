@@ -8,4 +8,14 @@ public final class ItemGhostCore extends ItemCore {
         this.setTextureName("ghost");
         this.setUnlocalizedName("ghost");
     }
+
+    @Override
+    public void onTickAction() {
+
+    }
+
+    @Override
+    public String getCoreName() {
+        return "ghost";
+    }
 }

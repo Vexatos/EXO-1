@@ -8,4 +8,14 @@ public final class ItemFrostCore extends ItemCore {
         this.setTextureName("frost");
         this.setUnlocalizedName("frost");
     }
+
+    @Override
+    public void onTickAction() {
+
+    }
+
+    @Override
+    public String getCoreName() {
+        return "frost";
+    }
 }

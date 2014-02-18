@@ -8,4 +8,14 @@ public final class ItemBulldozerCore extends ItemCore{
         this.setTextureName("bulldozer");
         this.setUnlocalizedName("bulldozer");
     }
+
+    @Override
+    public void onTickAction() {
+
+    }
+
+    @Override
+    public String getCoreName() {
+        return "nulldozer";
+    }
 }

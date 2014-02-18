@@ -8,4 +8,14 @@ public final class ItemEmptyCore extends ItemCore {
         this.setTextureName("empty");
         this.setUnlocalizedName("empty");
     }
+
+    @Override
+    public void onTickAction() {
+
+    }
+
+    @Override
+    public String getCoreName() {
+        return "empty";
+    }
 }

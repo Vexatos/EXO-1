@@ -9,7 +9,7 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 public final class IIRModifier extends IIR {
-    private final ResourceLocation TEXTURE = new ResourceLocation("exo", "");
+    private final ResourceLocation TEXTURE = new ResourceLocation("exo", "textures/blocks/machine/modifier.png");
 
     public IIRModifier(){
         super(new ModelModifier());

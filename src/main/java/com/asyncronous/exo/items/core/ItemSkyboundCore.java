@@ -8,4 +8,14 @@ public final class ItemSkyboundCore extends ItemCore {
         this.setTextureName("skybound");
         this.setUnlocalizedName("skybound");
     }
+
+    @Override
+    public void onTickAction() {
+
+    }
+
+    @Override
+    public String getCoreName() {
+        return "skybound";
+    }
 }

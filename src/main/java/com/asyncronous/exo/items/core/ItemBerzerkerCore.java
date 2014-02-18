@@ -8,4 +8,14 @@ public final class ItemBerzerkerCore extends ItemCore {
         this.setTextureName("berzerker");
         this.setUnlocalizedName("berzerker");
     }
+
+    @Override
+    public void onTickAction() {
+
+    }
+
+    @Override
+    public String getCoreName() {
+        return "berzerker";
+    }
 }

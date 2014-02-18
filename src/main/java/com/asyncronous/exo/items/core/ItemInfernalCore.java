@@ -8,4 +8,14 @@ public final class ItemInfernalCore extends ItemCore {
         this.setTextureName("infernal");
         this.setUnlocalizedName("infernal");
     }
+
+    @Override
+    public void onTickAction() {
+
+    }
+
+    @Override
+    public String getCoreName() {
+        return "infernal";
+    }
 }

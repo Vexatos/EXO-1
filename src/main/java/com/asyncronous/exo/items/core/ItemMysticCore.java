@@ -8,4 +8,14 @@ public final class ItemMysticCore extends ItemCore {
         this.setTextureName("mystic");
         this.setUnlocalizedName("mystic");
     }
+
+    @Override
+    public void onTickAction() {
+
+    }
+
+    @Override
+    public String getCoreName() {
+        return "mystic";
+    }
 }
