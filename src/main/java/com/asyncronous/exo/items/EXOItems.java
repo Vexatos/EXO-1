@@ -34,6 +34,8 @@ public final class EXOItems{
     public static final Item ITEM_COMPONENT = new ItemComponent();
     public static final Item ITEM_CRAFTING = new ItemCrafting();
 
+    public static final Item ITEM_TOOLBOX = new ItemToolbox();
+
     private EXOItems(){}
 
     public static EXOItems getInstance(){
@@ -60,6 +62,8 @@ public final class EXOItems{
 
         this.register(EXOItems.ITEM_COMPONENT, "component");
         this.register(EXOItems.ITEM_CRAFTING, "crafting");
+
+        this.register(EXOItems.ITEM_TOOLBOX, "toolbox");
     }
 
     public void register(Item item, String uid){

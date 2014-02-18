@@ -1,7 +1,7 @@
 package com.asyncronous.exo.blocks.machine;
 
 import com.asyncronous.exo.blocks.BlockMachine;
-import com.asyncronous.exo.tiles.machine.TileEntityModifier;
+import com.asyncronous.exo.tiles.machine.TileEntityToolbox;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.init.Blocks;
@@ -9,11 +9,13 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public final class BlockModifier extends BlockMachine {
-    public BlockModifier(){
+public final class BlockToolbox extends BlockMachine {
+    public BlockToolbox(){
         super();
-        this.setBlockName("exo.block.machine.modifier");
-        this.setBlockTextureName("exo:machine/modifier");
+        this.setCreativeTab(null);
+        this.setBlockTextureName("toolbox");
+        this.setBlockName("toolbox");
+        this.setBlockBounds(0.1F, 0.0F, 0.2F, 0.9F, 0.7F, 0.8F);
     }
 
     @Override
@@ -39,6 +41,6 @@ public final class BlockModifier extends BlockMachine {
 
     @Override
     public TileEntity createNewTileEntity(World world, int i){
-        return new TileEntityModifier();
+        return new TileEntityToolbox();
     }
 }

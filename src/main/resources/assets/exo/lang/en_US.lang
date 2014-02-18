@@ -1,5 +1,9 @@
 itemGroup.exo=Exoskeleton
 
+# Machines
+tile.exo.block.machine.assembler.name=Exoskeleton Assembler
+tile.exo.block.machine.modifier.name=Exoskeleton Modifier
+
 # Cores
 item.exo.core.assassin.name=Assassin Core
 item.exo.core.berzerker.name=Berzerker Core
@@ -44,3 +48,6 @@ item.exo.armor.helmet.name=Exoskeleton Helmet
 item.exo.armor.chest.name=Exoskeleton Chestplate
 item.exo.armor.leggings.name=Exoskeleton Leggings
 item.exo.armor.boots.name=Exoskeleton Boots
+
+# Misc Items
+item.exo.toolbox.name=Toolbox
